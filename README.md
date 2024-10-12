@@ -35,7 +35,7 @@ go run main.go
 # API Endpoint
 Base URL
 ```bash
-http://localhost:8080/api/
+http://localhost:8080/api/animals
 ```
 Silakan lihat dokumentasi API untuk daftar endpoint yang tersedia dan cara penggunaannya. Ada pada link berikut: 
 (https://documenter.getpostman.com/view/30196710/2sAXxS8BHa).
