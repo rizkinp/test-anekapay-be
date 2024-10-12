@@ -52,7 +52,6 @@ func (ar *AnimalRepo) GetAnimal(id int) (entity.Animal, error) {
 
 // CreateAnimal implements repository.AnimalRepository.
 func (ar *AnimalRepo) CreateAnimal(animal *entity.Animal) (int64, error) {
-	// Check if an animal with the same name already exists
 	var existingAnimal entity.Animal
 	err := ar.db.QueryRow("SELECT id, name, class, legs FROM tbl_animals WHERE name = ? AND is_deleted = 0", animal.Name).Scan(&existingAnimal.ID, &existingAnimal.Name, &existingAnimal.Class, &existingAnimal.Legs)
 	if err != nil && err != sql.ErrNoRows {
@@ -85,12 +84,10 @@ func (ar *AnimalRepo) UpdateAnimal(id int, animal *entity.Animal) (int64, error)
 		return 0, err
 	}
 
-	// Jika hewan tidak ditemukan, buat hewan baru
 	if existingAnimal.ID == 0 {
 		return ar.CreateAnimal(animal)
 	}
 
-	// Jika ditemukan, update data hewan
 	sql := "UPDATE tbl_animals SET name = ?, class = ?, legs = ? WHERE id = ? AND is_deleted = 0"
 	result, err := ar.db.Exec(sql, animal.Name, animal.Class, animal.Legs, id)
 	if err != nil {
@@ -120,6 +117,5 @@ func (ar *AnimalRepo) DeleteAnimal(id int) (int64, error) {
 		return 0, err
 	}
 
-	// Return the number of affected rows
 	return rowsAffected, nil
 }
