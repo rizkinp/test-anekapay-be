@@ -7,7 +7,6 @@ Proyek ini adalah backend sederhana untuk aplikasi Anekapay yang dibangun menggu
 Sebelum memulai, pastikan Anda telah menginstal:
 
 - [Go](https://golang.org/doc/install) (versi 1.18 atau lebih baru)
-- [Docker](https://docs.docker.com/get-docker/) (opsional, jika Anda ingin menjalankan menggunakan Docker)
 - [MySQL](https://www.mysql.com/downloads/) atau MySQL untuk database
 
 ## Clone Proyek
@@ -30,7 +29,9 @@ go get
 ```bash
 go run main.go
 ```
-# File Database dan Migrasi ada pada Folder ../config/migration/ .sql
+
+# Migration
+File Database dan Migrasi ada pada Folder ../config/migration/ .sql
 
 # API Endpoint
 Base URL
