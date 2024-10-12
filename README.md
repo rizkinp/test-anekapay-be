@@ -15,7 +15,6 @@ Clone repositori ini ke dalam direktori lokal Anda:
 ```bash
 git clone https://github.com/username/test-anekapay-backend.git
 ```
-
 # Masuk ke direktori proyek
 ```bash
 cd test-anekapay-backend
@@ -24,11 +23,20 @@ cd test-anekapay-backend
 ```bash
 go mod init test-anekapay-backend
 ```
-# Instal dependensi Echo
-go get github.com/labstack/echo/v4
-
+```bash
+go get
+```
+# Running projek
+```bash
+go run main.go
+```
 # File Database dan Migrasi ada pada Folder ../config/migration/ .sql
 
 # API Endpoint
-## Silakan lihat dokumentasi API untuk daftar endpoint yang tersedia dan cara penggunaannya. Ada pada link berikut: 
+Base URL
+```bash
+http://localhost:8080/api/
+```
+Silakan lihat dokumentasi API untuk daftar endpoint yang tersedia dan cara penggunaannya. Ada pada link berikut: 
 (https://documenter.getpostman.com/view/30196710/2sAXxS8BHa).
+
