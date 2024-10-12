@@ -1,6 +1,6 @@
 # Test Backend Anekapay
 
-Proyek ini adalah backend sederhana untuk aplikasi Anekapay yang dibangun menggunakan Go dengan framework Echo. Proyek ini mencakup pengaturan, inisialisasi, dan migrasi database.
+Proyek ini adalah backend sederhana untuk aplikasi Anekapay yang dibangun menggunakan Go dengan framework Echo.
 
 ## Prerequisites
 
