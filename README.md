@@ -14,6 +14,10 @@ Sebelum memulai, pastikan Anda telah menginstal:
 
 Clone repositori ini ke dalam direktori lokal Anda:
 
+### Clone Repository
 ```bash
 git clone https://github.com/username/test-anekapay-backend.git
+
+### Setup
+```bash
 cd test-anekapay-backend
