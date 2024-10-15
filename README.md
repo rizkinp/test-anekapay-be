@@ -12,7 +12,7 @@ Sebelum memulai, pastikan Anda telah menginstal:
 ## Clone Proyek
 Clone repositori ini ke dalam direktori lokal Anda:
 ```bash
-git clone https://github.com/username/test-anekapay-backend.git
+git clone https://github.com/rizkinp/test-anekapay-be
 ```
 # Masuk ke direktori proyek
 ```bash
