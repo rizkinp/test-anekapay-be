@@ -16,11 +16,11 @@ git clone https://github.com/rizkinp/test-anekapay-be
 ```
 # Masuk ke direktori proyek
 ```bash
-cd test-anekapay-backend
+cd test-anekapay-be
 ```
 # Inisialisasi modul Go
 ```bash
-go mod init test-anekapay-backend
+go mod init test-anekapay-be
 ```
 ```bash
 go get
